@@ -297,6 +297,8 @@ h1
 		.price-new
 			font-size: 58px
 			line-height: 56px
+			.symbol, .time
+				line-height: 39px
 		.pricing__button
 			display: block
 
@@ -307,6 +309,8 @@ h1
 	.price-new
 		font-size: 58px
 		line-height: 56px
+		.symbol, .time
+			line-height: 39px
 	.pricing__button
 		display: block
 
@@ -338,13 +342,16 @@ h1
 		vertical-align: bottom
 		
 .price-new
-	padding-top: 23px
+	min-height: 105px
+	display: flex
+	align-items: center
+	justify-content: center 
 	background-color: #FFF 
 	font-size: 46px
 	line-height: 40px
 	.symbol, .time
 		font-size: 30px
-		line-height: 39px	
+		line-height: 31px	
 	
 
 .price-old
@@ -369,18 +376,16 @@ h1
 
 .table-pricing
 	.btn-wrap
-		background-color: #FFF
-		height: 31px
+		position: absolute
+		bottom: 0
+		left: 50%
+		transform: translate(-50%,40%)
 		
 .pricing__button
 	width: 215px
 	height: 40px
 	padding: 1em 0
 	display: none
-	position: relative
-	bottom: 0
-	left: 50%
-	transform: translate(-50%,10%)
 	transition: all 0.2s
 
 
@@ -535,13 +540,18 @@ h1
 				width: 85%
 		
 		.price-new
-			line-height: 54px
+			min-height: 110px
+			border-bottom-left-radius: 3px
+			border-bottom-right-radius: 3px
 				
 		.popular
 			width: 75%
 				
-		.pricing__button
+		.btn-wrap
+			width: 215px
 			max-width: 85% 
+			.pricing__button
+				width: 100%
 
 
 
